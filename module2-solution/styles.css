@@ -1,0 +1,123 @@
+ /********** Base styles **********/
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .row {
+    width: 98%;
+  }
+
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .item {
+    position: relative;
+    top: 0;
+    background-color:#d5cdcd;
+    margin: 15px;
+    padding: 25px;
+    border: 3px solid #000;
+  }
+
+  .item p{
+    margin-top: 15px;
+    text-align: justify;
+    font-size:100%;
+  }
+  
+  .title1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px 10px 20px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: blueviolet;
+    font-size: larger;
+    font-weight: bold;     
+  }
+  
+  .title2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px 10px 20px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: rgb(43, 186, 226);
+    font-size: larger;
+    font-weight: bold;   
+}
+
+  .title3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px 10px 20px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: rgb(226, 43, 107);
+    font-size: larger;
+    font-weight: bold;   
+}
+ 
+  
+  /********** Desktop devices only **********/
+  @media (min-width: 992px) {
+    .col-desktop-1, .col-desktop-2, .col-desktop-3 {
+      float: left;
+    }
+    .col-desktop-1 {
+      width: 33.33%;
+    }
+    .col-desktop-2 {
+      width: 66.66%;
+    }
+    .col-desktop-3 {
+      width: 100%;
+    }
+  }
+  
+  /********** Tablet devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-tablet-1, .col-tablet-2, .col-tablet-3 {
+      float: left;
+    }
+    .col-tablet-1 {
+      width: 25%;
+    }
+    .col-tablet-2 {
+      width: 50%;
+    }
+    .col-tablet-3 {
+      width: 100%;
+    }
+  }
+  
+  /********** Mobile devices only **********/
+  @media (max-width: 767px) {
+    .col-mobile-1, .col-mobile-2, .col-mobile-3 {
+      float: left;    
+    }
+    .col-mobile-1 {
+      width: 33.33%;
+    }
+    .col-mobile-2 {
+      width: 66.66%;
+    }
+    .col-mobile-3 {
+      width: 100%;
+    }
+  }
+ 
